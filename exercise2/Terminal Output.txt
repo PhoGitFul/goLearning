@@ -1,0 +1,501 @@
+ggo: creating new go.mod: module 01_exercise
+go: to add module requirements and sums:
+        go mod tidy
+mal@ip-10-192-241-136 goExercise % go mod tidy            
+go: warning: "all" matched no packages
+mal@ip-10-192-241-136 goExercise % 
+ *  History restored 
+
+mal@ip-10-192-241-136 goExercise % .exeVariables
+zsh: command not found: .exeVariables
+mal@ip-10-192-241-136 goExercise % ls
+01_exercise     go.mod
+mal@ip-10-192-241-136 goExercise % cd 01_exercise
+mal@ip-10-192-241-136 01_exercise % .exeVariables 
+zsh: command not found: .exeVariables
+mal@ip-10-192-241-136 01_exercise % ls
+exeVariables.go
+mal@ip-10-192-241-136 01_exercise % ./exeVariables
+zsh: no such file or directory: ./exeVariables
+mal@ip-10-192-241-136 01_exercise % go build exeVariables.go
+mal@ip-10-192-241-136 01_exercise % ./exeVariables          
+zsh: no such file or directory: ./exeVariables
+mal@ip-10-192-241-136 01_exercise % go run exeVariables.go
+package command-line-arguments is not a main package
+mal@ip-10-192-241-136 01_exercise % ls                      
+exeVariables.go
+mal@ip-10-192-241-136 01_exercise % go run exeVariables.go
+package command-line-arguments is not a main package
+mal@ip-10-192-241-136 01_exercise % go build exeVariables.go
+mal@ip-10-192-241-136 01_exercise % go run exeVariables.go  
+Current station: Union Square
+Next train: 12 minutes
+Is uptown: false
+
+Current station: Grand Central
+Next train: 3 minutes
+Is uptown: true
+mal@ip-10-192-241-136 01_exercise % cd ..
+mal@ip-10-192-241-136 goExercise % echo "# goExercise" >> README.md
+mal@ip-10-192-241-136 goExercise % git init
+hint: Using 'master' as the name for the initial branch. This default branch name
+hint: is subject to change. To configure the initial branch name to use in all
+hint: of your new repositories, which will suppress this warning, call:
+hint: 
+hint:   git config --global init.defaultBranch <name>
+hint: 
+hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+hint: 'development'. The just-created branch can be renamed via this command:
+hint: 
+hint:   git branch -m <name>
+Initialized empty Git repository in /Users/mal/MalPersRepo/automation-1/goExercise/.git/
+mal@ip-10-192-241-136 goExercise % git config --global init.defaultBranch main
+mal@ip-10-192-241-136 goExercise % git init                                   
+Reinitialized existing Git repository in /Users/mal/MalPersRepo/automation-1/goExercise/.git/
+mal@ip-10-192-241-136 goExercise % git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        01_exercise/
+        README.md
+        go.mod
+
+nothing added to commit but untracked files present (use "git add" to track)
+mal@ip-10-192-241-136 goExercise % git add .
+mal@ip-10-192-241-136 goExercise % git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   01_exercise/exeVariables
+        new file:   01_exercise/exeVariables.go
+        new file:   README.md
+        new file:   go.mod
+
+mal@ip-10-192-241-136 goExercise % git commit -m "first commit"
+[master (root-commit) aca4f15] first commit
+ 4 files changed, 33 insertions(+)
+ create mode 100755 01_exercise/exeVariables
+ create mode 100644 01_exercise/exeVariables.go
+ create mode 100644 README.md
+ create mode 100644 go.mod
+mal@ip-10-192-241-136 goExercise % git branch -M main
+mal@ip-10-192-241-136 goExercise % git remote add origin git@github.com:PhoGitFul/goExercise.git
+mal@ip-10-192-241-136 goExercise % git push -u origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 1.07 MiB | 3.48 MiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:PhoGitFul/goExercise.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+mal@ip-10-192-241-136 goExercise % 
+ *  History restored 
+
+mal@Mals-14-MacBook-Pro goExercise % 
+ *  History restored 
+
+mal@Mals-14-MacBook-Pro goExercise % ./exeConstant
+zsh: no such file or directory: ./exeConstant
+mal@Mals-14-MacBook-Pro goExercise % ls
+01_exercise     README.md       go.mod
+mal@Mals-14-MacBook-Pro goExercise % cd ..
+mal@Mals-14-MacBook-Pro automation-1 % cd ..
+mal@Mals-14-MacBook-Pro MalPersRepo % ls
+Agent           automation-1
+mal@Mals-14-MacBook-Pro MalPersRepo % cd ..
+mal@Mals-14-MacBook-Pro ~ % ls
+02 - Malcolm John Graney Mauve Malaysia Emp Con As Per WP V5 US_encrypted_.pdf
+Carrine Vietnam itinerary.xlsx
+Chores.xlsx
+Desktop
+Documents
+Downloads
+Library
+MalPersRepo
+Movies
+Music
+OneDrive - River Island
+OrderConfirmation_ID92001_2023-07-15-0806.pdf
+PhoKew-collection-20231221-0838.csv
+PhoKew-collection-20231221-0838.numbers
+Pictures
+Postman
+Public
+RIStuff
+Storage Options.xlsx
+UK Winter 23.xlsx
+go
+mal@Mals-14-MacBook-Pro ~ % cd go
+mal@Mals-14-MacBook-Pro go % cd src
+mal@Mals-14-MacBook-Pro src % cd github.com
+mal@Mals-14-MacBook-Pro github.com % cd goLearning
+cd: no such file or directory: goLearning
+mal@Mals-14-MacBook-Pro github.com % cd automation-1
+mal@Mals-14-MacBook-Pro automation-1 % cd projects
+mal@Mals-14-MacBook-Pro projects % ls
+goExercise      goLearning
+mal@Mals-14-MacBook-Pro projects % ./exeConstant  
+zsh: no such file or directory: ./exeConstant
+mal@Mals-14-MacBook-Pro projects % cd goLearning
+mal@Mals-14-MacBook-Pro goLearning % ls
+01_helloworld                   README.md                       go.mod
+02_Variables                    exercise                        goLearning.code-workspace
+03_Constants                    exercise2
+mal@Mals-14-MacBook-Pro goLearning % cd exercise2
+mal@Mals-14-MacBook-Pro exercise2 % exeConstant.go
+zsh: command not found: exeConstant.go
+mal@Mals-14-MacBook-Pro exercise2 % run exeConstant.go
+zsh: command not found: run
+mal@Mals-14-MacBook-Pro exercise2 % ls
+Notes_on_push.md        README.md               exeConstant             exeConstant.go
+mal@Mals-14-MacBook-Pro exercise2 % go run exeConstant.go
+Hotel:      Gopher Hotel
+Longitude:  24.806078
+Latitude:   -78.243027
+Occupancy:  12
+mal@Mals-14-MacBook-Pro exercise2 % go run exeConstant.go
+Hotel:      Gopher Hotel
+Longitude:  24.806078
+Latitude:   -78.243027
+Occupancy:  12
+%T -78.243027
+mal@Mals-14-MacBook-Pro exercise2 % go run exeConstant.go
+Hotel:      Gopher Hotel
+Longitude:  24.806078
+Latitude:   -78.243027
+Occupancy:  12
+float64%                                                                                                               
+mal@Mals-14-MacBook-Pro exercise2 % exeConstant
+zsh: command not found: exeConstant
+mal@Mals-14-MacBook-Pro exercise2 % ./exeConstant       
+Hotel:      Gopher Hotel
+Longitude:  24.806078
+Latitude:   -78.243027
+Occupancy:  12
+mal@Mals-14-MacBook-Pro exercise2 % cd ..                
+mal@Mals-14-MacBook-Pro goLearning % git pull
+Already up to date.
+mal@Mals-14-MacBook-Pro goLearning % git checkout -b variables
+fatal: a branch named 'variables' already exists
+mal@Mals-14-MacBook-Pro goLearning % git checkout -b controlStatements
+Switched to a new branch 'controlStatements'
+mal@Mals-14-MacBook-Pro goLearning % git branch --set-upstream-to=origin/main controlStatements
+branch 'controlStatements' set up to track 'origin/main'.
+mal@Mals-14-MacBook-Pro goLearning % cd 04_ControlStatements
+mal@Mals-14-MacBook-Pro 04_ControlStatements % git pull                                                  
+Already up to date.
+mal@Mals-14-MacBook-Pro 04_ControlStatements % git branch --set-upstream-to=origin/main controlStatements
+branch 'controlStatements' set up to track 'origin/main'.
+mal@Mals-14-MacBook-Pro 04_ControlStatements % git checkout -b controlStatements                         
+fatal: a branch named 'controlStatements' already exists
+mal@Mals-14-MacBook-Pro 04_ControlStatements % git status
+On branch controlStatements
+Your branch is ahead of 'origin/main' by 6 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   ../exercise2/exeConstant.go
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ./
+
+no changes added to commit (use "git add" and/or "git commit -a")
+mal@Mals-14-MacBook-Pro 04_ControlStatements % ./exemain                                               
+zsh: no such file or directory: ./exemain
+mal@Mals-14-MacBook-Pro 04_ControlStatements % run main.go                                             
+zsh: command not found: run
+mal@Mals-14-MacBook-Pro 04_ControlStatements % go run main.go  
+main.go:1:1: expected 'package', found 'EOF'
+mal@Mals-14-MacBook-Pro 04_ControlStatements % go run main.go  
+main.go:1:1: expected 'package', found 'EOF'
+mal@Mals-14-MacBook-Pro 04_ControlStatements % go run main.go  
+main.go:1:1: expected 'package', found 'EOF'
+mal@Mals-14-MacBook-Pro 04_ControlStatements % go run main.go  
+x is gt 5
+mal@Mals-14-MacBook-Pro 04_ControlStatements % go run main.go  
+else case
+mal@Mals-14-MacBook-Pro 04_ControlStatements % go run main.go  
+x is gt 5
+mal@Mals-14-MacBook-Pro 04_ControlStatements % go run main.go  
+x is gt 5
+mal@Mals-14-MacBook-Pro 04_ControlStatements % go run main.go  
+x is gt 10
+mal@Mals-14-MacBook-Pro 04_ControlStatements % go run main.go  
+else case
+mal@Mals-14-MacBook-Pro 04_ControlStatements % go run main.go  
+x is gt 5
+mal@Mals-14-MacBook-Pro 04_ControlStatements % go run main.go  
+x =  10
+x is gt 5
+mal@Mals-14-MacBook-Pro 04_ControlStatements % go run main.go  
+x = 11
+x is gt 10
+mal@Mals-14-MacBook-Pro 04_ControlStatements % go run main.go  
+x = 5
+else case
+mal@Mals-14-MacBook-Pro 04_ControlStatements % go run main.go  
+x = 4
+else case
+mal@Mals-14-MacBook-Pro 04_ControlStatements % go run main.go  
+x = 6
+x is gt 5
+mal@Mals-14-MacBook-Pro 04_ControlStatements % go run main.go  
+# command-line-arguments
+./main.go:11:21: syntax error: unexpected x in argument list; possibly missing comma or )
+mal@Mals-14-MacBook-Pro 04_ControlStatements % go run main.go  
+x = 20
+x = 20 and is gt 10
+mal@Mals-14-MacBook-Pro 04_ControlStatements % go run main.go  
+x = 20
+x = 20 and so is gt 10
+mal@Mals-14-MacBook-Pro 04_ControlStatements % go run main.go  
+x = 4
+x = 4 falls into the else and so must be lt 5
+mal@Mals-14-MacBook-Pro 04_ControlStatements % go run main.go  
+x = 4 falls into the else and so must be lt 5
+mal@Mals-14-MacBook-Pro 04_ControlStatements % git branch
+  03_Constant
+* controlStatements
+  exercise
+  main
+  variables
+mal@Mals-14-MacBook-Pro 04_ControlStatements % go run main.go  
+x = 4 and so is gt 10
+mal@Mals-14-MacBook-Pro 04_ControlStatements % go run main.go  
+x = 6 and so is lt 10
+mal@Mals-14-MacBook-Pro 04_ControlStatements % go run main.go  
+x = 11 and so is gt 5
+mal@Mals-14-MacBook-Pro 04_ControlStatements % go run main.go  
+John is 105 years old
+Paul is 62 years old
+Paul is younger than John, or both have the same age
+mal@Mals-14-MacBook-Pro 04_ControlStatements % go run main.go  
+John is 73 years old
+Paul is 57 years old
+Paul is younger than John, or both have the same age
+mal@Mals-14-MacBook-Pro 04_ControlStatements % go run main.go  
+John is 32 years old
+Paul is 83 years old
+Paul is older than John
+mal@Mals-14-MacBook-Pro 04_ControlStatements % go run main.go  
+John is 22 years old
+Paul is 58 years old
+Paul is older than John
+mal@Mals-14-MacBook-Pro 04_ControlStatements % go run main.go  
+John is 61 years old
+Paul is 15 years old
+Paul is younger than John, or both have the same age
+mal@Mals-14-MacBook-Pro 04_ControlStatements % go run main.go  
+John is 82 years old
+Paul is 97 years old
+Paul is older than John
+mal@Mals-14-MacBook-Pro 04_ControlStatements % go run main.go  
+# command-line-arguments
+./main.go:26:7: syntax error: unexpected ageJohn at end of statement
+mal@Mals-14-MacBook-Pro 04_ControlStatements % go run main.go  
+John is 32 years old
+Paul is 32 years old
+Paul is same age as John
+mal@Mals-14-MacBook-Pro 04_ControlStatements % go run main.go  
+John is 32 years old
+Paul is 32 years old
+John and Paul are the same age
+mal@Mals-14-MacBook-Pro 04_ControlStatements % go run main.go  
+time to work!
+mal@Mals-14-MacBook-Pro 04_ControlStatements % go run main.go  
+browse memes
+mal@Mals-14-MacBook-Pro 04_ControlStatements % go run main.go  
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+mal@Mals-14-MacBook-Pro 04_ControlStatements % go run main.go  
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+2
+mal@Mals-14-MacBook-Pro 04_ControlStatements % go run main.go  
+# command-line-arguments
+./main.go:76:20: invalid character U+201C '“' in identifier
+./main.go:76:20: undefined: “Go”
+./main.go:76:25: invalid character U+201D '”' in identifier
+mal@Mals-14-MacBook-Pro 04_ControlStatements % go run main.go  
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+2
+mal@Mals-14-MacBook-Pro 04_ControlStatements % git init
+Initialized empty Git repository in /Users/mal/go/src/github.com/automation-1/projects/goLearning/04_ControlStatements/.git/
+mal@Mals-14-MacBook-Pro 04_ControlStatements % git status
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+        main.go
+
+nothing added to commit but untracked files present (use "git add" to track)
+mal@Mals-14-MacBook-Pro 04_ControlStatements % git add .
+mal@Mals-14-MacBook-Pro 04_ControlStatements % git status
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+        new file:   main.go
+
+mal@Mals-14-MacBook-Pro 04_ControlStatements % git commit -m "controlStatements first commit"
+[main (root-commit) 01ae90f] controlStatements first commit
+ 2 files changed, 94 insertions(+)
+ create mode 100644 README.md
+ create mode 100644 main.go
+mal@Mals-14-MacBook-Pro 04_ControlStatements % git status
+On branch main
+nothing to commit, working tree clean
+mal@Mals-14-MacBook-Pro 04_ControlStatements % git remote add git@github.com:PhoGitFul/goLearning.git
+usage: git remote add [<options>] <name> <url>
+
+    -f, --fetch           fetch the remote branches
+    --tags                import all tags and associated objects when fetching
+                          or do not fetch any tag at all (--no-tags)
+    -t, --track <branch>  branch(es) to track
+    -m, --master <branch> master branch
+    --mirror[=(push|fetch)]
+                          set up remote as a mirror to push to or fetch from
+
+mal@Mals-14-MacBook-Pro 04_ControlStatements % git push -u origin main
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+mal@Mals-14-MacBook-Pro 04_ControlStatements % git status                                            
+On branch main
+nothing to commit, working tree clean
+mal@Mals-14-MacBook-Pro 04_ControlStatements % git push origin HEAD
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+mal@Mals-14-MacBook-Pro 04_ControlStatements % git status
+On branch main
+nothing to commit, working tree clean
+mal@Mals-14-MacBook-Pro 04_ControlStatements % git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+mal@Mals-14-MacBook-Pro 04_ControlStatements % git branch
+* main
+mal@Mals-14-MacBook-Pro 04_ControlStatements % git reset head
+mal@Mals-14-MacBook-Pro 04_ControlStatements % git status    
+On branch main
+nothing to commit, working tree clean
+mal@Mals-14-MacBook-Pro 04_ControlStatements % git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=<remote>/<branch> main
+
+mal@Mals-14-MacBook-Pro 04_ControlStatements % git checkout -b contStatment
+Switched to a new branch 'contStatment'
+mal@Mals-14-MacBook-Pro 04_ControlStatements % git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=<remote>/<branch> contStatment
+
+mal@Mals-14-MacBook-Pro 04_ControlStatements % git branch --set-upstream-to=<remote>/main contStatment
+zsh: no such file or directory: remote
+mal@Mals-14-MacBook-Pro 04_ControlStatements % git branch --set-upstream-to=origin/main contStatment
+fatal: the requested upstream branch 'origin/main' does not exist
+hint: 
+hint: If you are planning on basing your work on an upstream
+hint: branch that already exists at the remote, you may need to
+hint: run "git fetch" to retrieve it.
+hint: 
+hint: If you are planning to push out a new local branch that
+hint: will track its remote counterpart, you may want to use
+hint: "git push -u" to set the upstream config as you push.
+hint: Disable this message with "git config advice.setUpstreamFailure false"
+mal@Mals-14-MacBook-Pro 04_ControlStatements % git branch                                             
+* contStatment
+  main
+mal@Mals-14-MacBook-Pro 04_ControlStatements % git push origin HEAD:main
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+mal@Mals-14-MacBook-Pro 04_ControlStatements % git status                                             
+On branch contStatment
+nothing to commit, working tree clean
+mal@Mals-14-MacBook-Pro 04_ControlStatements % git log
+commit 01ae90f0d68713d7ec8b75d41ddbe5291c94ba64 (HEAD -> contStatment, main)
+Author: Malcolm Graney <Malcolm.Graney@river-island.com>
+Date:   Thu Apr 25 14:35:30 2024 +0800
+
+    controlStatements first commit
+mal@Mals-14-MacBook-Pro 04_ControlStatements % git diff
+mal@Mals-14-MacBook-Pro 04_ControlStatements % git diff --cached
+mal@Mals-14-MacBook-Pro 04_ControlStatements % git branch                                           
+* contStatment
+  main
+mal@Mals-14-MacBook-Pro 04_ControlStatements % git log
+commit 01ae90f0d68713d7ec8b75d41ddbe5291c94ba64 (HEAD -> contStatment, main)
+Author: Malcolm Graney <Malcolm.Graney@river-island.com>
+Date:   Thu Apr 25 14:35:30 2024 +0800
+
+    controlStatements first commit
+mal@Mals-14-MacBook-Pro 04_ControlStatements % 
