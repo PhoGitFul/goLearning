@@ -14,4 +14,5 @@ func main() {
 	fmt.Println("Longitude: ", longitude)
 	fmt.Println("Latitude:  ", latitude)
 	fmt.Println("Occupancy: ", occupancy)
+	fmt.Printf("%T", latitude)
 }
