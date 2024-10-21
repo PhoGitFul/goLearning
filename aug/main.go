@@ -5,12 +5,12 @@ import "fmt"
 func main() {
 
 	const myFirstName string = "Malcolm" // Long form way of declaring and setting a constant
-	mySurname := "Graney"                //Short way to declare, although not sure if this makes it a var. I checked and it does make it a var
+	mySurname := "Graney"                // Short way to declare a var
 	fmt.Println("My Name is", myFirstName, mySurname)
 
 	numKids := 10 //Declaring an int variable here in short format
 	if numKids > 0 && numKids < 5 {
-		fmt.Println("I have", numKids, "children") //Print how many kids I have, using variable set above
+		fmt.Println("I have", numKids, "children")
 	}
 	kidsName(numKids) // kidsName function to display the names of my kids, passing how many kids I have as the parameter
 	// I could have moved the call to kidsName within the if numKids > 0 code and then not required the switch case witihin the function
@@ -18,7 +18,7 @@ func main() {
 	var married bool = true //setting 2 boolean variables this one is long hand
 	happy := true           //this one shorthand
 
-	if married && happy { //If statment first check is, if both booleans are true using the AND Logical Operator
+	if married && happy { //If statment - if both booleans are true using the AND Logical Operator
 		fmt.Println("I am happily married")
 	} else { // Else fall into this section
 		if !married { //Check if not married
