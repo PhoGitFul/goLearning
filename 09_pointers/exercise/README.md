@@ -25,3 +25,20 @@ Create a Go program that includes a function to modify a variable's value using 
 Declare a variable of type int.
 Define a function that takes a pointer to an int and modifies its value.
 Call this function and print the value before and after the function call.
+
+var poInt int                               //Declare an integer poInt
+
+func square(ptr *int) {                     //Function which accepts a pointer and then squares the value
+	*ptr = *ptr * *ptr                      //at that pointer location
+}
+
+func main() {
+
+	poInt = 3
+	fmt.Println("initial poInt:", poInt)    //Print inital value of the integer before the call to the func
+
+	square(&poInt)                          //Pass the pointer of the integer to the Function
+
+	fmt.Println("squared poInt:", poInt)    //Print inital value of the integer before the call to the func
+	fmt.Println("poInt pointer:", &poInt)   //Print address of the integer
+}
