@@ -5,7 +5,7 @@ import "fmt"
 // Define an interface
 type Employee interface {
 	GetSalary() float64
-	GetDetails() string
+	GetDetails() (string, string)
 }
 
 // Permanent Employee
@@ -28,18 +28,23 @@ func (c Contractor) GetSalary() float64 {
 	return salary
 }
 
-func (p Permie) GetDetails() string {
-	msg1 := fmt.Sprintf("%s is a Permanent Employee.\n", p.name)
-	return msg1
+func (p Permie) GetDetails() (string, string) {
+	// msg1 := fmt.Sprintf("%s is a Permanent Employee.\n", p.name)
+	// return msg1
+	return p.name, "Permie"
 }
 
-func (c Contractor) GetDetails() string {
-	msg1 := fmt.Sprintf("%s is a Contract Employee.\n", c.name)
-	return msg1
+func (c Contractor) GetDetails() (string, string) {
+	// msg1 := fmt.Sprintf("%s is a Contract Employee.\n", c.name)
+	// return msg1
+	return c.name, "Contractor"
+
 }
 
 func printEmpDetails(e Employee) {
-	fmt.Printf("%s", e.GetDetails())
+
+	forename, etype := e.GetDetails()
+	fmt.Printf("%s is a %s Employee\n", forename, etype)
 	fmt.Printf("Their monthly salary is £%.2f\n", e.GetSalary())
 	fmt.Println()
 }

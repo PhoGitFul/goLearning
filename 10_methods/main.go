@@ -31,6 +31,9 @@
 //
 
 // --------------------
+// Encapsulation example
+// Use methods to restrict direct access to fields (getter/setter).
+// --------------------
 // package main
 
 // import (
@@ -49,6 +52,11 @@
 // Results when running the Models methods
 // mal@ip-10-192-241-246 10_methods % go run main.go
 // 123
+//
+// --------------------
+// Builders or Chaining example
+// Use method chaining for clean object creation.
+// --------------------
 // package main
 
 // import "fmt"
@@ -99,7 +107,11 @@
 // When pointers aren't used we can see a new instance of rect is created and as such has not got
 // Width set on the last call, whereas when we use a Pointer we are referencing the same instance
 // and so Width is still set as 5 from previous call.
-
+//
+// --------------------
+// Behaviour Implementation example
+// Attach meaningful actions to types.
+// --------------------
 package main
 
 import "fmt"
@@ -114,5 +126,5 @@ func (r Rectangle) Area() float64 {
 
 func main() {
 	rect := Rectangle{5, 10}
-	fmt.Println("Area:", rect.Area()) // Output: 50
+	fmt.Println("Area:", rect.Area()) // Output: Area: 50
 }

@@ -1,24 +1,3 @@
-// package main
-
-// type Employee interface {
-// 	PrintName()
-// }
-
-// type Intern struct {
-// 	Name string
-// }
-
-// func (i Intern) PrintName() {
-// 	println(i.Name)
-// }
-
-// func main() {
-// 	var e Employee
-
-// 	e = Intern{"John"}
-// 	e.PrintName()
-// }
-
 // Example taken and played with from DigitalOcean
 // Please excuse the number of comments I need these for my reference when looking back at what I have learned
 // In real functional Code would not include so many comments :-)
@@ -98,6 +77,9 @@ func (d *DeepSeaDiver) Dive() {
 	d.diverLevel = "One"
 }
 
+// Assertion on the Subersible to see if it is a DeepSeaDiver type as we only have two then I can use
+// this if else if there were more types and I was going to use this for diff submersibles then
+// I guess I would use a switch statment instead
 func detectSeaCreature(s Submersible) {
 	if d, ok := s.(*DeepSeaDiver); ok {
 		fmt.Printf("The Diver is called %s\n", d.Name)

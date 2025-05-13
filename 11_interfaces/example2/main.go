@@ -27,7 +27,7 @@ func (r rect) perim() float64 {
 	return 2*r.width + 2*r.height
 }
 
-// same for circle
+// now implement geometry for circles
 // Note that the methods within each type can be different as can be seen comparing the methods on rect and circle
 func (c circle) area() float64 {
 	return math.Pi * c.radius * c.radius
